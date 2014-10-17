@@ -1,0 +1,8 @@
+# To test only one function: python manage.py test cards.tests.UtilTest.test_create_deck
+# convention to have one test.py per app
+# better to break out the tests by files.  (Views, Forms, Models, etc...)
+
+#python manage.py test --pattern=test[^e]
+
+
+#setUp and tearDown are camelcase

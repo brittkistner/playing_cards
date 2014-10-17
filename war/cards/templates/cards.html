@@ -1,0 +1,4 @@
+{% extends 'base.html' %}
+{% for card in cards %}
+    <p>Suit: {{ card.get_suit_display }}, Rank: {{ card.rank }}</p>
+{% endfor %}

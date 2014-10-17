@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Hi {{ user.username }}, you have {{ wins }} wins and {{ losses }} loses.</p>
+    <p>Your email address is {{ user.email }}</p>
+    <p>Your game record is {{ record }}</p>
+
+    <h2>Past Games</h2>
+    {% for game in games %}
+        <p>{{ game.get_result_display }}</p>
+    {% endfor %}
+{% endblock content %}
+
