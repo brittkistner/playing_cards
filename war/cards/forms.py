@@ -3,7 +3,6 @@ from django.conf import settings
 from django.contrib.auth.forms import UserCreationForm
 from django.core.mail import EmailMultiAlternatives
 from cards.models import Player
-from code import interact
 
 class EmailUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)
